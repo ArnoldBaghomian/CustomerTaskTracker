@@ -5,7 +5,6 @@ var router = express.Router();
 var User = require('../models/user');
 
 
-
 router.get('/', function(req, res, next) {
   User.find({}, function(err, allUser) {
     if (err) return console.log(err);
@@ -24,7 +23,5 @@ router.post('/', function(req, res, next) {
     res.send(User);
   });
 });
-
-
 
 module.exports = router;

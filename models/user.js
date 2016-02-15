@@ -2,7 +2,6 @@
 
 var mongoose = require('mongoose');
 
-
 var User;
 
 var userSchema = mongoose.Schema({
@@ -11,8 +10,6 @@ var userSchema = mongoose.Schema({
   complete: {type: String, required:true}
 
 });
-
-
 
 User = mongoose.model('User', userSchema);
 
