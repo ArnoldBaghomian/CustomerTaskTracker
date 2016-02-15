@@ -25,11 +25,6 @@ router.post('/', function(req, res, next) {
   });
 });
 
-router.post('/remove', function(req, res, next) {
-  var userId = req.body._id;
-  user.remove({_id: userId}, function(err, user) {
-    if (err) return console.log(err);
-  });
-});
+
 
 module.exports = router;

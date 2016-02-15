@@ -7,7 +7,8 @@ app.controller('homeCtrl', function($scope,$sessionStorage) {
   }, function(err) {
     console.log('error:',err);
   });
-  //add a new task to mongo DB
+
+
   $scope.addUser = function() {
     var user = {
       user: $scope.user,
