@@ -10,6 +10,29 @@
     <script src="/js/bundle.js"></script>
   </head>
   <body ng-app='someApp'>
+<input type="text"> <button>Add todo</button> 
+
+<input type="text">
+<button>Date</button> 
+
+<table class="table">
+  <thead>
+    <tr>
+ 
+      <th>Itemtodo</th>
+      <th>Date</th>
+      <th>complete</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr ng-repeat="item in list" ng-if='list.length'>
+      <td>Workout</td>
+      <td>3/2/2016</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
   
     <ui-view></ui-view>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
